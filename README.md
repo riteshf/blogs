@@ -1,4 +1,6 @@
-# fresh project
+# A Trail Project to Learn `Deno`, `Fresh`
+
+## [Blog Demo Link](https://riteshf-blogs.deno.dev/)
 
 ### Usage
 
