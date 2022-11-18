@@ -1,5 +1,6 @@
 ---
 title: Typescript advance types
+description: enum, tuple, interface, generics, class, extends, inheritance
 published_at: 2022-11-04T15:00:00.000Z
 snippet: Understand how to write basic types in Typescript
 ---

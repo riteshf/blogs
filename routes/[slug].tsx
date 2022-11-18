@@ -15,6 +15,8 @@ export default function PostPage(props: PageProps<Post>) {
   return (
     <>
       <Head>
+        <title>{post.title}</title>
+        <meta name="description" content={post.description} />
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
       </Head>
       <main class="max-w-screen-md px-4 pt-16 mx-auto">

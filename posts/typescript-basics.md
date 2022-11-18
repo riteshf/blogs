@@ -1,5 +1,6 @@
 ---
 title: Getting started with Typescript
+description: string, boolean, number, null, undefined, any, function, array, object, record
 published_at: 2022-11-04T15:00:00.000Z
 snippet: Understand how to write basic types in Typescript
 ---
