@@ -18,7 +18,7 @@ export async function getPosts(): Promise<Post[]> {
   const promises: Post[] = [];
   for await (const file of files) {
     const slug = file.name.replace(".md", "");
-    let post = await getPost(slug);
+    const post = await getPost(slug);
     promises.push(post);
   }
   const posts = await Promise.all<Post[]>(promises);

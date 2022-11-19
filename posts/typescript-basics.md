@@ -1,7 +1,7 @@
 ---
 title: Getting started with Typescript
 description: string, boolean, number, null, undefined, any, function, array, object, record
-published_at: 2022-11-04T15:00:00.000Z
+published_at: 2022-11-17T15:00:00.000Z
 snippet: Understand how to write basic types in Typescript
 ---
 
@@ -70,7 +70,8 @@ e = "Hello!"; // Error
 
 - any
   - None of the following lines of code will throw compiler errors.
-  - Using `any` disables all further type checking, and it is assumed you know the environment better than TypeScript.
+  - Using `any` disables all further type checking, and it is assumed you know
+    the environment better than TypeScript.
 
 ```ts
 let f: any = "Hello";
@@ -79,7 +80,8 @@ f = true; // Okay
 ```
 
 - Literal Types
-  - When we know what is going to be exact value of a variable, we use literal type
+  - When we know what is going to be exact value of a variable, we use literal
+    type
 
 ```ts
 let g: "hello" = "hello";
@@ -100,7 +102,9 @@ h = true; // Error
 
 # Functions Types
 
-Functions are the primary means of passing data around in JavaScript. TypeScript allows you to specify the types of both the input and output values of functions.
+Functions are the primary means of passing data around in JavaScript. TypeScript
+allows you to specify the types of both the input and output values of
+functions.
 
 ```ts
 const add = (a: number, b: number): number => {
@@ -113,8 +117,10 @@ add(1, "Hello"); // Error
 
 # Array
 
-- To specify the type of an array like `[1, 2, 3]`, you can use the syntax `number[]`.
-- This syntax works for any type (e.g. string[] is an array of strings, and so on).
+- To specify the type of an array like `[1, 2, 3]`, you can use the syntax
+  `number[]`.
+- This syntax works for any type (e.g. string[] is an array of strings, and so
+  on).
 - You may also see this written as `Array<number>`.
 
 ```ts
@@ -154,15 +160,15 @@ arr6.push("Hello"); // Error
 
 - Object
   - A common way of defining an Object.
-  - Using `Object` disables all further type checking, and it is assumed you know the environment better than TypeScript.
+  - Using `Object` disables all further type checking, and it is assumed you
+    know the environment better than TypeScript.
 
 ```ts
 let user1: Object = { id: 1, name: "Ritesh" };
 user1 = { lastName: "Firodiya" }; // Okay
 ```
 
-- Record
-  Used when we know the exact value type in an Object.
+- Record Used when we know the exact value type in an Object.
 
 ```ts
 let question: Record<string, boolean> = {

@@ -1,7 +1,7 @@
 ---
 title: Typescript advance types
 description: enum, tuple, interface, generics, class, extends, inheritance
-published_at: 2022-11-04T15:00:00.000Z
+published_at: 2022-11-18T18:00:00.000Z
 snippet: Understand how to write basic types in Typescript
 ---
 
@@ -34,9 +34,12 @@ tsc --watch
 
 - [ENUM](https://www.typescriptlang.org/docs/handbook/enums.html)
 
-Enums are one of the few features TypeScript has which is not a type-level extension of JavaScript.
+Enums are one of the few features TypeScript has which is not a type-level
+extension of JavaScript.
 
-Enums allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
+Enums allow a developer to define a set of named constants. Using enums can make
+it easier to document intent, or create a set of distinct cases. TypeScript
+provides both numeric and string-based enums.
 
 ```ts
 // Numeric enums
@@ -66,7 +69,8 @@ let arr: Array<[number, number]> = [
 
 - [Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
 
-An Art of designing re-usable functions in Typescript, where we pass type along with
+An Art of designing re-usable functions in Typescript, where we pass type along
+with
 
 ```ts
 type Student = { rollNo: number; fullName: string; age: number };
@@ -92,7 +96,8 @@ getStudent<Instructor>(instructors, 0); // Okay
 
 - [keyof](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html)
 
-The keyof operator takes an object type and produces a string or numeric literal union of its keys. The following type P is the same type as “x” | “y”:
+The keyof operator takes an object type and produces a string or numeric literal
+union of its keys. The following type P is the same type as “x” | “y”:
 
 ```ts
 type Person = { name: string; lastName: string };
@@ -124,7 +129,10 @@ An interface declaration is another way to name an object type:
 
 - Differences Between Type Aliases and Interfaces
 
-  - Type aliases and interfaces are very similar, and in many cases you can choose between them freely. Almost all features of an interface are available in type, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.
+  - Type aliases and interfaces are very similar, and in many cases you can
+    choose between them freely. Almost all features of an interface are
+    available in type, the key distinction is that a type cannot be re-opened to
+    add new properties vs an interface which is always extendable.
 
 ```ts
 interface Point {
@@ -142,7 +150,9 @@ printCoord({ x: 100, y: 100 });
 
 - [class]()
 
-Classes are a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+Classes are a template for creating objects. They encapsulate data with code to
+work on that data. Classes in JS are built on prototypes but also have some
+syntax and semantics that are not shared with ES5 class-like semantics.
 
 We can define a structure for a Class in Typescript:
 
@@ -162,7 +172,8 @@ let emp = new Employee(100, "Steve");
 
 - [Inheritance](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#extends)
 
-Just like object-oriented languages such as Java and C#, TypeScript classes can be extended to create new classes with inheritance, using the keyword `extends`.
+Just like object-oriented languages such as Java and C#, TypeScript classes can
+be extended to create new classes with inheritance, using the keyword `extends`.
 
 ```ts
 class Person {
